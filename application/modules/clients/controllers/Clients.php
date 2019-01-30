@@ -23,6 +23,7 @@ class Clients extends CI_Controller {
         // $data['type_user'] = $this->Model->getList('admin_service');
         $data['profiles'] = $this->Model->getList('profil');
         $data['title']="users";
+        $data['test'] = 'bonjour';
         $this->load->view('Client_Add_Views',$data);
     }
 
